@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luna Velasco | Portafolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Literata:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fondo: #eef2f6;
+    --papel: #ffffff;
+    --tinta: #14213d;
+    --suave: #4a5870;
+    --acento: #1f6f78;
+    --resalte: #f2b544;
+    --linea: #cfd8e3;
+    --titulos: "Sora", "Segoe UI", Arial, sans-serif;
+    --texto: "Literata", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--fondo);
+    color: var(--tinta);
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+  a { color: var(--acento); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--resalte); outline-offset: 3px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+
+  header.top { background: var(--tinta); color: #fff; }
+  nav { display: flex; gap: 1.5rem; flex-wrap: wrap; padding: 1rem 0; font-family: var(--titulos); font-size: .95rem; }
+  nav a { color: #dfe6f0; text-decoration: none; }
+  nav a:hover { color: var(--resalte); }
+
+  .hero { padding: 4rem 0 4.5rem; }
+  .hero h1 {
+    font-family: var(--titulos);
+    font-size: clamp(2.4rem, 8vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+  .hero .rol { font-family: var(--titulos); color: var(--resalte); font-size: 1.2rem; margin-bottom: 1.25rem; }
+  .hero p { color: #dfe6f0; max-width: 34em; margin-bottom: 2rem; }
+  .btn {
+    display: inline-block; padding: .8rem 1.5rem; border-radius: 6px;
+    background: var(--resalte); color: var(--tinta); text-decoration: none;
+    font-family: var(--titulos); font-weight: 700; font-size: 1rem;
+  }
+  .btn:hover { background: #fff; }
+
+  section { padding: 3.5rem 0; border-bottom: 1px solid var(--linea); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { font-family: var(--titulos); font-size: 1.75rem; margin-bottom: 1.25rem; letter-spacing: -0.01em; }
+  h3 { font-family: var(--titulos); font-size: 1.15rem; margin-bottom: .25rem; }
+  p + p { margin-top: 1rem; }
+
+  .estudio { background: var(--papel); border-left: 6px solid var(--acento); padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
+  .estudio p { color: var(--suave); font-size: 1.05rem; }
+  .materias { list-style: none; display: grid; gap: .5rem; margin-top: .75rem; }
+  .materias li { padding-left: 1.25rem; position: relative; }
+  .materias li::before { content: ""; position: absolute; left: 0; top: .75em; width: .5rem; height: .5rem; background: var(--resalte); border-radius: 50%; }
+
+  .habilidades { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; }
+  .habilidades li {
+    background: var(--papel); border: 1px solid var(--linea); border-radius: 999px;
+    padding: .35rem 1rem; font-family: var(--titulos); font-size: .95rem;
+  }
+
+  footer { background: var(--tinta); color: #dfe6f0; padding: 2rem 0; font-size: .95rem; }
+  footer a { color: var(--resalte); }
+
+  @media (max-width: 480px) {
+    body { font-size: 1.05rem; }
+    .hero { padding: 3rem 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <nav aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#educacion">Educación</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="hero">
+      <h1>Hola, soy Luna Jaqueline Velasco Mora</h1>
+      <p class="rol">Estudiante de Ingeniería en TIC</p>
+      <p>Estudio en el Instituto Tecnológico de Tijuana, Unidad Tomás Aquino, en el Departamento de Sistemas y Computación.</p>
+      <a class="btn" href="#contacto">Contáctame</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="sobre-mi">
+    <div class="wrap">
+      <h2>Sobre mí</h2>
+      <p>Nací en Tijuana, B.C. Tengo 21 años y cumplo años el 26 de diciembre. Me gusta mi carrera porque aprendo un poco de todo: administración, redes, programación, probabilidad y estadística, entre otras cosas.</p>
+      <p>Mi meta a corto plazo es terminar mi carrera, aprobar todas mis materias y buscar un trabajo que me apasione. Me gustaría trabajar en la aduana; es una espinita que tengo.</p>
+      <p>Disfruto aprender cosas nuevas y poner en práctica lo que veo en clase, sobre todo cuando se trata de resolver problemas con tecnología.</p>
+    </div>
+  </section>
+
+  <section id="educacion">
+    <div class="wrap">
+      <h2>Educación</h2>
+      <article class="estudio">
+        <h3>Ingeniería en Tecnologías de la Información y Comunicaciones</h3>
+        <p>Instituto Tecnológico de Tijuana, Unidad Tomás Aquino. Departamento de Sistemas y Computación.</p>
+      </article>
+      <p>Algunas de las áreas que he estudiado:</p>
+      <ul class="materias">
+        <li>Programación</li>
+        <li>Redes</li>
+        <li>Administración</li>
+        <li>Probabilidad y estadística</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="wrap">
+      <h2>Habilidades</h2>
+      <ul class="habilidades">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>C#</li>
+        <li>Docker</li>
+        <li>Redes</li>
+        <li>Administración</li>
+        <li>Probabilidad y estadística</li>
+        <li>Trabajo en equipo</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <p>¿Quieres hablar conmigo? Escríbeme a <a href="mailto:l22211217@tectijuana.edu.mx">l22211217@tectijuana.edu.mx</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Luna Jaqueline Velasco Mora. Hecho con HTML y CSS.</div>
+</footer>
+
+</body>
+</html>
 
